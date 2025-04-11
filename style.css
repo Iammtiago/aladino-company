@@ -1,0 +1,78 @@
+* {
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+
+body{
+    overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h1 > span, h2 > span{
+  font-family: 'Cinzel', 'Montserrat', sans-serif;
+}
+
+.menu-open {
+  transform: translateX(0);
+}
+
+#home{
+    background-image: url("./src/img/man-standing-rock-against-sky-perso.jpg");
+}
+
+#empieza-hoy-1{
+    background-image: url("./src/img/happy-business-team-communicating-meeting-office.jpg");
+}
+
+#mujer-tortuga-logo{
+      width: -webkit-fill-available;
+}
+
+details[open] summary .icon-plus {
+  display: none;
+}
+
+details[open] summary .icon-times {
+  display: inline;
+}
+
+summary .icon-times {
+  display: none;
+}
+
+.text-blue-dark{
+  color: #1D3557;
+}
+.text-blue{
+  color: #0051BA;
+}
+.text-blue-light{
+  color: #98BADD;
+}
+.text-beige{
+  color: #C19A6B;
+}
+.text-orange{
+  color: #D98D30;
+}
+.text-orange-light{
+  color: #F2B950;
+}
+.bg-blue-dark{
+  background-color: #1D3557;
+}
+.bg-blue{
+  background-color: #0051BA;
+}
+.bg-blue-light{
+  background-color: #98BADD;
+}
+.bg-beige{
+  background-color: #C19A6B;
+}
+.bg-orange{
+  background-color: #D98D30;
+}
+.bg-orange-light{
+  background-color: #F2B950;
+}

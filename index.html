@@ -1,0 +1,399 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aladino Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-white text-gray-800">
+    <header class="w-full sticky top-0 px-5 md:px-9 h-20 lg:h-[100px] flex items-center justify-around duration-500 z-40 lg:z-50 bg-[#1D3557] transition">
+        <a class="w-1/2 m-auto lg:w-[40%] ml-[5%] lg:ml-16">
+            <img class="h-full py-2" src="./src/logo/Aladino-logo-blanco.png" alt="logo aladino" />
+        </a>
+        <nav class="w-1/2 lg:w-[52%] flex justify-end lg:justify-start">
+            <ul class="hidden lg:flex gap-x-10 text-lg text-slate-300/95 font-normal  transition-all">
+                <li>
+                    <a href="#home" class="hover:text-[#f2f2f2] transition-all">Home</a>
+                </li>
+                <li>
+                    <a href="#quienes-somos" class="hover:text-[#f2f2f2] transition-all">¿Quienes somos?</a>
+                </li>
+                <li>
+                    <a href="#que-hacemos" class="hover:text-[#f2f2f2] transition-all">¿Qué hacemos?</a>
+                </li>
+                <li>
+                    <a href="#contact" class="hover:text-[#f2f2f2] transition-all">Contáctanos</a>
+                </li>
+            </ul>
+            <div class="block lg:hidden mr-[10%]">
+                <button id="menu-toggle" class="text-gray-300 text-xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="fixed inset-0 bg-slate-100 text-white flex flex-col items-center justify-center transform translate-x-full transition-transform duration-300 lg:hidden">
+            <button id="menu-close" class="absolute text-2xl top-9 right-9 text-gray-900 focus:outline-none">
+        <i class="fas fa-times"></i>
+      </button>
+            <ul class="space-y-8 text-gray-900 text-center ">
+                <li>
+                    <a class="font-semibold" href="#home" onclick="closeMenu()">Home</a>
+                </li>
+                <li>
+                    <a class="font-semibold" href="#quienes-somos" onclick="closeMenu()">¿Quienes somos?</a>
+                </li>
+                <li>
+                    <a class="font-semibold" href="#que-hacemos" onclick="closeMenu()">¿Qué hacemos?</a>
+                </li>
+                <li>
+                    <a class="font-semibold" href="#contact" onclick="closeMenu()">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home" class="bg-bottom bg-no-repeat bg-cover w-full h-[74vh] max-h-dvh flex justify-end">
+        <div class="h-full md:w-1/2 px-16 md:px-12 text-slate-50 text-3xl font-normal md:text-right flex items-center justify-start">
+            <h2 class="text-right md:w-[60%]">
+                Transformación vital por medio del crecimiento de competencias asociadas al liderazgo.
+            </h2>
+        </div>
+    </section>
+
+    <div class="flex h-3">
+        <div class="w-1/6 bg-black"></div>
+        <div class="w-1/6 bg-blue"></div>
+        <div class="w-1/6 bg-blue-light"></div>
+        <div class="w-1/6 bg-beige"></div>
+        <div class="w-1/6 bg-orange"></div>
+        <div class="w-1/6 bg-orange-light"></div>
+    </div>
+
+    <section id="quienes-somos" class="bg-slate-50 w-full md:h-[92vh] md:max-h-dvh flex flex-col md:flex-row py-5">
+        <div class="w-2/3 md:w-1/2 mx-auto mt-6 md:mt-0 flex justify-center md:justify-end items-center">
+            <img src="./src/img/hombre-elegante-alvaro.png" class="h-[84%]" alt="" />
+        </div>
+        <div class="w-4/5 md:w-1/2 mx-auto flex flex-col justify-start items-center pt-10 md:p-20 md:pt-16 md:pr-24">
+            <div class="h-1/4 flex flex-col justify-end text-right gap-y-1">
+                <h1 class="text-3xl text-blue-dark tracking-[0.3rem] font-light">ÁLVARO LADINO</h1>
+                <h3 class="text-orange text-base tracking-widest font-normal pr-2">COACH EJECUTIVO</h3>
+            </div>
+
+            <div class="h-3/4 flex flex-col items-start gap-y-2">
+                <p class="text-center text-blue-dark w-[75%] mx-auto md:text-right md:w-[69%] md:ml-[10%] text-xl tracking-wide leading-[1.4rem] my-5 md:my-9">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod elit, sed diam nonummy nibh euismod
+                </p>
+
+                <div class="flex flex-row gap-x-4 md:gap-x-12 text-right mb-9 mt-3 mx-auto md:mb-0 text-black">
+                    <div class="flex flex-col gap-y-3">
+                        <h1 class="text-4xl font-bold mr-1">10X</h1>
+                        <span class="text-blue-dark tracking-widest">PROFIT</span>
+                    </div>
+                    <div class="flex flex-col gap-y-3">
+                        <h1 class="text-4xl font-bold mr-2">+20</h1>
+                        <span class="text-blue-dark tracking-widest">EXPERIENCIA</span>
+                    </div>
+                    <div class="flex flex-col gap-y-3">
+                        <h1 class="text-4xl font-bold mr-2">+30</h1>
+                        <span class="text-blue-dark tracking-widest">COACHEES</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-blue-dark w-full h-auto md:h-[48%]">
+        <div class="md:h-full w-full relative flex">
+            <div class="w-2 h-[40%] md:h-[60%] bg-blue-light absolute -top-3 right-[5%] md:right-[18%]"></div>
+            <div class="flex flex-col text-center shrink w-3/4 md:w-1/2 mx-auto my-9 md:my-0 md:justify-center">
+                <h1 class="text-blue-light font-normal text-3xl md:text-4xl mb-6 tracking-widest">
+                    MÁXIMA EFECTIVIDAD
+                </h1>
+                <p class="text-slate-100 text-lg md:text-xl md:tracking-wider">
+                    Aplicamos una metodología dinámica e interactiva, diseñada para potenciar el talento y maximizar el desarrollo personal y profesional.
+                </p>
+            </div>
+            <div class="w-2 h-[40%] md:h-[60%] bg-blue absolute -bottom-3 left-[5%] md:left-[18%]"></div>
+        </div>
+    </section>
+
+    <section class="bg-slate-50 w-full h-auto lg:h-[94vh] lg:max-h-dvh lg:flex lg:px-14 py-10 lg:py-8 lg:gap-x-9">
+        <div class="mx-auto h-auto lg:w-1/2 flex flex-col justify-start lg:flex-row lg:justify-end lg:items-end font-normal py-[3%] lg:p-12 lg:pl-10">
+            <div class="h-full text-blue-dark mx-auto flex flex-col justify-start lg:items-start lg:justify-start gap-y-9 w-5/6 lg:w-[77%] pb-8 lg:pb-0">
+                <h1 class="text-orange text-3xl text-center lg:text-left lg:text-4xl font-light tracking-[0.1em] lg:tracking-[0.2em] mt-2 w-[92%]">
+                    Liderazgo Transformacional & Crecimiento Empresarial</h1>
+                <p class="pl-[2%] md:pl-0">Impulsamos una transformación estratégica y efectiva a través del desarrollo de habilidades clave en <span class="font-semibold">liderazgo empresarial, empoderamiento, innovación y
+            confianza.</span></p>
+                <div class="w-full mt-1 align-middle flex justify-center md:block"><a class="bg-blue-dark text-slate-50 font-semibold px-7 py-1 rounded-full w-auto mx-auto" href="#contact">Conoce más</a></div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto lg:w-1/2 flex justify-center items-center p-3 lg:p-0 gap-x-5 lg:gap-x-0">
+            <div class="w-1/2 h-full mb-9 lg:mb-0 lg:relative">
+                <img class="rounded-3xl w-full h-auto lg:h-[64%] lg:w-auto lg:absolute lg:top-7 lg:right-16" src="./src/img/businesswoman-using-digital-tablet-hotel-room.jpg" alt="" />
+            </div>
+
+            <div class="w-1/2 h-full mt-9 lg:mt-0 lg:relative">
+                <img class="rounded-3xl w-full h-auto lg:h-[64%] lg:w-auto lg:absolute lg:bottom-5 lg:-left-12" src="./src/img/man-laptop.jpg" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <section id="empieza-hoy-1" class="bg-cover bg-center w-full md:h-[82vh] md:max-h-dvh">
+        <div class="bg-sky-950/65 text-slate-50 w-full h-fit md:h-full flex flex-col justify-center items-center gap-y-10 md:gap-y-12 px-12 py-14 md:px-20 md:py-10 text-center">
+            <h1 class=" text-4xl font-light tracking-[0.2em] md:w-4/5">
+                EL <span class="font-semibold">ALTO DESEMPEÑO</span> SE FUNDAMENTA EN EL LIDERAZGO ESTRATÉGICO</h1>
+            <a class="bg-slate-50 text-orange text-2xl font-semibold px-12 py-2 rounded-full w-auto mb-2 md:mb-0" href="#contact">¡Empieza hoy!</a>
+        </div>
+    </section>
+
+    <div class="flex h-3">
+        <div class="w-1/6 bg-blue-dark"></div>
+        <div class="w-1/6 bg-blue"></div>
+        <div class="w-1/6 bg-blue-light"></div>
+        <div class="w-1/6 bg-beige"></div>
+        <div class="w-1/6 bg-orange"></div>
+        <div class="w-1/6 bg-orange-light"></div>
+    </div>
+
+    <section id="que-hacemos" class="bg-sky-100 w-full h-auto lg:min-h-dvh px-0 py-9 lg:py-14 lg:pt-10 lg:px-20">
+        <div class="w-full h-auto lg:h-full lg:flex">
+            <div class="w-full lg:w-2/5 flex flex-col items-center lg:items-end px-16 lg:px-0">
+                <div class="h-full w-full lg:w-4/5 text-blue-dark flex flex-col justify-center items-center gap-y-6 lg:pl-2">
+                    <h1 class="text-blue-dark text-2xl font-normal leading-8 tracking-[0.17em] lg:w-[90%]">EXPANDE TU INFLUENCIA, LIDERA CON CONFIANZA Y ALCANZA TUS OBJETIVOS</h1>
+
+                    <p class="text-base leading-6 lg:w-[90%]">
+                        Potenciamos la inteligencia emocional y la gestión del cambio para <span class="font-semibold">garantizar el
+              éxito profesional y el bienestar organizacional</span>, generando un impacto directo en la productividad, el alto rendimiento y la cohesión de equipos
+                    </p>
+
+                    <p class="text-base leading-6 font-semibold lg:w-[90%]">
+                        Nuestro enfoque optimiza el desempeño individual y colectivo, fortaleciendo una cultura empresarial orientada al crecimiento y la excelencia.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-full h-auto lg:w-3/5 lg:h-full hidden lg:flex justify-center p-3 lg:p-0 gap-x-0">
+                <div class="w-[30%] h-full lg:h-auto lg:relative">
+                    <!-- <img class="rounded-3xl h-[64%] bg-cover bg-center absolute bottom-4 left-12" src="" alt=""> -->
+                    <div class="rounded-3xl w-full h-auto lg:h-[80%] bg-cover bg-center absolute bottom-0 right-6" style="background-image: url('./src/img/medium-shot-asian-woman-posing-office-window.jpg');"></div>
+                </div>
+
+                <div class="w-[48%] h-full lg:h-auto lg:relative">
+                    <div class="rounded-3xl w-full h-auto lg:h-[80%] bg-cover bg-center absolute bottom-20 right-0" style="background-image: url('./src/img/business-colleagues-using-tablet-their-office.jpg');"></div>
+                    <!-- <img class="rounded-3xl h-[70%] bg-cover bg-center absolute bottom-16 " src="./src/img/business-colleagues-using-tablet-their-office.jpg" alt=""> -->
+                </div>
+            </div>
+
+            <div class="w-full h-auto flex flex-col justify-center items-center pt-9 px-5 gap-y-9 lg:hidden">
+
+                <div class="w-[55%] h-full ">
+                    <img class="rounded-3xl w-full h-auto lg:w-auto lg:h-[64%] lg:absolute lg:top-7 lg:right-16" src="./src/img/medium-shot-asian-woman-posing-office-window.jpg" alt="" />
+                </div>
+
+                <div class="w-4/5 h-full ">
+                    <img class="rounded-3xl w-full lg:w-auto h-auto lg:h-[64%] lg:absolute lg:bottom-5 lg:-left-12" src="./src/img/business-colleagues-using-tablet-their-office.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-slate-700 w-full h-auto md:h-[88vh] md:max-h-dvh">
+        <div class="md:flex w-full h-auto md:h-full relative">
+            <div class="w-full md:w-[50%] lg:w-[45%] h-max md:h-full bg-blue-dark flex flex-col justify-center items-center gap-y-12 px-20 md:px-5 lg:px-20 py-16 md:py-10  text-center border-t-[18px] border-sky-200/25">
+                <h1 class="text-slate-50 text-4xl font-light tracking-[0.2em] w-4/5">
+                    DESBLOQUEA FRONTERAS, LIDERA CON IMPACTO, CRECE SIN LÍMITES.
+                </h1>
+                <a class="bg-blue-light text-blue-dark text-xl font-semibold px-7 py-1 rounded-full w-auto" href="#contact">Empieza hoy</a>
+            </div>
+
+            <div class="w-full h-auto min-h-[45%] md:w-[50%] lg:w-[55%] md:h-full relative flex">
+                <div class="w-1/2 min-h-full md:min-h-auto md:h-full bg-blue md:border-t-[18px] md:border-sky-200/25"></div>
+                <div class="w-1/2 min-h-full md:min-h-auto md:h-full bg-blue-light"></div>
+            </div>
+            <img id="mujer-tortuga-logo" class="w-auto md:h-auto md:max-h-[97%] md:max-w-[50%] lg:max-w-[62%] mx-7 md:m-0 bg-cover bg-top absolute bottom-0 md:left-[41%] lg:left-[34%]" src="./src/img/mujer-negocios-TORTUGA.png" alt="" />
+            <!-- <div class="rounded-3xl w-[60%] h-auto bg-cover bg-center absolute bottom-0 right-0" style="background-image: url('./src/img/mujer-negocios-llamada.png');"></div> -->
+
+        </div>
+    </section>
+
+    <section class="w-full">
+        <div class="max-w-3xl mx-auto px-9 py-14">
+            <h3 class="text-blue font-bold text-lg mb-4 md:mb-0">Metodología</h3>
+            <p class="text-blue text-lg leading-6 my-2">
+                A través de sesiones virtuales o presenciales, creamos espacios de crecimiento que impulsan el desarrollo personal y profesional. Nuestro enfoque transformador genera un impacto tangible en el desempeño individual y colectivo, elevando resultados a corto,
+                mediano y largo plazo.
+            </p>
+            <div class="flex mt-10">
+                <div class="w-1/5 h-1 bg-black"></div>
+                <div class="w-1/5 h-1 bg-blue"></div>
+                <div class="w-1/5 h-1 bg-blue-light"></div>
+                <div class="w-1/5 h-1 bg-beige"></div>
+                <div class="w-1/5 h-1 bg-orange"></div>
+                <!-- <div class="w-1/3 h-1 bg-orange-600"></div> -->
+            </div>
+            <div class="mt-4">
+                <details class="border-b-2 border-slate-500 py-5 md:pt-6 md:pb-9">
+                    <summary class="flex items-center justify-between cursor-pointer">
+                        <div class="flex items-center w-full mb-2 md:mb-0">
+                            <i class="fas fa-times text-black icon-times"></i>
+                            <i class="fas fa-plus text-black icon-plus"></i>
+                            <span class="ml-2 font-bold text-gray-800">DESARROLLO DE POTENCIAL</span>
+                        </div>
+                    </summary>
+                    <div class="flex">
+                        <div class="md:w-1/2 md:hidden"></div>
+                        <div class="md:w-1/2">
+                            <p class="text-gray-600 md:-mt-[1.6rem]">
+                                Desarrollo de Potencial<br /> Descubre y fortalece tus habilidades para alcanzar un desempeño excepcional y crecer profesionalmente.
+                            </p>
+                        </div>
+                    </div>
+                </details>
+                <details class="border-b-2 border-slate-500 py-5 md:py-9">
+                    <summary class="flex items-center justify-between cursor-pointer">
+                        <div class="flex items-center w-full mb-2 md:mb-0">
+                            <i class="fas fa-times text-black icon-times"></i>
+                            <i class="fas fa-plus text-black icon-plus"></i>
+                            <span class="ml-2 font-bold text-gray-800">INTELIGENCIA EMOCIONAL</span>
+                        </div>
+                    </summary>
+                    <div class="flex">
+                        <div class="md:w-1/2 md:hidden"></div>
+                        <div class="md:w-1/2">
+                            <p class="text-gray-600 md:-mt-[1.6rem]">
+                                Desarrolla una inteligencia emocional sólida que impulse tu éxito, bienestar y liderazgo efectivo.
+                            </p>
+                        </div>
+                    </div>
+                </details>
+                <details class="border-b-2 border-slate-500 py-5 md:py-9">
+                    <summary class="flex items-center justify-between cursor-pointer">
+                        <div class="flex items-center w-full mb-2 md:mb-0">
+                            <i class="fas fa-times text-black icon-times"></i>
+                            <i class="fas fa-plus text-black icon-plus"></i>
+                            <span class="ml-2 font-bold text-gray-800">LIDERAZGO EFECTIVO</span>
+                        </div>
+                    </summary>
+                    <div class="flex">
+                        <div class="md:w-1/2 md:hidden"></div>
+                        <div class="md:w-1/2">
+                            <p class="text-gray-600 md:-mt-[1.6rem]">
+                                Genera un impacto positivo y medible en tu rendimiento individual y en la eficacia de tus equipos.
+                            </p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="border-y-8 border-sky-[#98BADD] w-full h-[90vh] max-h-dvh bg-bottom bg-no-repeat bg-cover py-9" style="background-image: url('./src/img/vertical-high-angle-shot-person-standing-end-walking-road-roys-peak-new-zealand.jpg');">
+        <div class="w-full h-full flex justify-center items-center lg:relative">
+            <form id="formulario" action="" class="bg-slate-950/60 w-auto max-w-[90%] md:max-w-[60%] lg:max-w-[30%] h-auto lg:absolute lg:top-[50%] lg:-translate-y-[50%] lg:left-[16%] rounded-3xl  p-12 pt-4">
+                <h1 class="text-slate-50 text-2xl font-normal tracking-[0.2em] lg:w-4/6 mb-5">TU NUEVO CAMINO EMPIEZA HOY!</h1>
+
+                <div class="flex flex-wrap gap-3 mb-4">
+                    <input type="text" id="name" class="bg-slate-200 placeholder:text-slate-600 text-slate-800 rounded-full px-6 py-2 w-full" placeholder="Tu nombre" />
+                    <input type="text" id="company" class="bg-slate-200 placeholder:text-slate-600 text-slate-800 rounded-full px-6 py-2 w-full" placeholder="Empresa" />
+                    <input type="email" id="email" class="bg-slate-200 placeholder:text-slate-600 text-slate-800 rounded-full px-6 py-2 w-1/3 flex-1" placeholder="Mail" />
+                    <input type="tel" id="number-phone" class="bg-slate-200 placeholder:text-slate-600 text-slate-800 rounded-full px-6 py-2 w-1/3 flex-1" placeholder="Telf" />
+                </div>
+
+                <div class="grid shrink-0 grid-cols-1 w-full focus-within:relative my-4">
+                    <select autocomplete="country" id="select-area" class="col-start-1 row-start-1 w-full appearance-none py-2 pr-7 pl-3.5 text-base text-slate-100 placeholder:text-slate-100 bg-transparent border-b-[3px] border-slate-200 sm:text-sm/6">
+            <option class="bg-slate-950/90">Área de interés</option>
+            <option class="bg-slate-950/90">INTELIGENCIA EMOCIONAL</option>
+            <option class="bg-slate-950/90">LIDERAZGO EFECTIVO</option>
+            <option class="bg-slate-950/90">DESARROLLO DE POTENCIAL</option>
+          </select>
+                    <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-slate-100 sm:size-7" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+            <path fill-rule="evenodd"
+              d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd" />
+          </svg>
+                </div>
+
+                <div class="w-full flex justify-center items-center">
+                    <button type="submit" class="bg-slate-200 hover:bg-slate-300 transition-all text-slate-600 px-8 py-2 rounded-full mt-4 mx-auto w-auto">
+            ENVIAR
+          </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="min-h-[45vh] max-h[60vh] w-full px-14 pt-4 pb-9 md:pt-9 md:pb-0">
+        <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-x-9"> -->
+        <div class="flex lg:flex-wrap flex-col md:flex-row justify-center items-center gap-y-7 md:gap-x-16 md:mx-[4%]">
+            <div class="flex flex-col justify-center items-center md:items-start flex-initial w-64">
+                <a class="w-2/3">
+                    <img class="h-full" src="./src/logo/azul.png" alt="" />
+                </a>
+                <p class="text-slate-700 text-base w-2/3 mt-4">
+                    Desarrollo de Potencial Descubre y fortalece tus habilidades.
+                </p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center flex-auto min-w-80">
+                <ul class="flex flex-col justify-center text-blue-dark text-start w-2/5">
+                    <li><a class="font-semibold" href="#home">Home</a></li>
+                    <div class="w-full h-0 border-b-[0.5px] border-slate-950/90 my-4"></div>
+                    <li>
+                        <a class="font-semibold" href="#quienes-somos">¿Quienes somos?</a>
+                    </li>
+                    <div class="w-full h-0 border-b-[0.5px] border-slate-950 my-4"></div>
+                    <li>
+                        <a class="font-semibold" href="#que-hacemos">¿Qué hacemos?</a>
+                    </li>
+                    <div class="w-full h-0 border-b-[0.5px] border-slate-950 my-4"></div>
+                    <li><a class="font-semibold" href="#contact">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col justify-center items-center flex-1">
+                <div class="text-right">
+                    <!-- <div class="flex justify-end space-x-4 mb-4"> -->
+                    <div class="flex justify-center space-x-4 mb-4">
+                        <a href="https://api.whatsapp.com/send/?phone=573164702845&type=phone_number&app_absent=0" class="text-green-600 text-5xl"><i class="fab fa-whatsapp"></i></a>
+                        <!-- <a href="#" class="text-blue-800 text-3xl"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-pink-600 text-3xl"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-red-600 text-3xl"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                    <!-- <div class="bg-gray-300 h-12 w-64 mx-auto rounded-full mb-4"></div> -->
+                    <!-- <input type="email" class="bg-slate-200/80 placeholder:text-slate-600 text-slate-800 rounded-full px-6 py-2 flex-1" placeholder="Mail"/>
+             <button type="submit" class="bg-slate-200 hover:bg-slate-300 transition-all text-slate-600 px-8 py-2 rounded-full mt-4  w-auto">SUSCRÍBETE</button> -->
+                    <div class="w-full flex justify-end items-end">
+                        <!-- alvaro.ladino@aladinocompany.com -->
+                    </div>
+                    <!-- <h2 class="text-xl font-bold text-gray-800 mb-2">SUSCRÍBETE</h2> -->
+                    <p class="text-gray-700 text-sm leading-5">
+                        Mantente al día con lo más reciente sobre<br />crecimiento empresarial y liderazgo
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="flex h-3">
+        <div class="w-1/3 bg-blue-dark"></div>
+        <div class="w-1/3 bg-blue"></div>
+        <div class="w-1/3 bg-blue-light"></div>
+        <div class="w-1/3 bg-beige"></div>
+        <div class="w-1/3 bg-orange"></div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+                publicKey: "YOUR_PUBLIC_KEY",
+            });
+        })();
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
